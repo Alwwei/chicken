@@ -31,11 +31,11 @@ struct City: Hashable {
     
     static let citys: [City] =
     [
-        City(city: "台北市", area: ["中正區","大安區"], i: 0),
-        City(city: "台中市", area: ["大屯區"], i: 1),
-        City(city: "桃園市", area: ["區"], i: 2),
-        City(city: "新北市", area: ["區"], i: 3),
-        City(city: "台南市", area: ["區"], i: 4)
+        City(city: "台北市", area: ["中正區","大安區"], i: 1),
+        City(city: "台中市", area: ["大屯區"], i: 2),
+        City(city: "桃園市", area: ["區"], i: 3),
+        City(city: "新北市", area: ["區"], i: 4),
+        City(city: "台南市", area: ["區"], i: 5)
     ]
 }
 
@@ -52,10 +52,10 @@ struct MRT: Hashable {
     
     static let MRTs: [MRT] =
     [
-        MRT(line: "紅線", station: ["台北車站","中繼"], i: 0),
-        MRT(line: "綠線", station: ["西門站"], i: 1),
-        MRT(line: "藍線", station: ["國館站"], i: 2),
-        MRT(line: "黃線", station: ["站"], i: 3)
+        MRT(line: "紅線", station: ["台北車站","中繼"], i: 1),
+        MRT(line: "綠線", station: ["西門站"], i: 2),
+        MRT(line: "藍線", station: ["國館站"], i: 3),
+        MRT(line: "黃線", station: ["站"], i: 4)
     ]
 }
 
@@ -72,33 +72,39 @@ struct School: Hashable {
     
     static let schools: [School] =
     [
-        School(city: "台北市", name: ["大學","大學"], i: 0),
-        School(city: "台南市", name: ["大學"], i: 1),
-        School(city: "台中市", name: ["大學"], i: 2),
-        School(city: "高雄市", name: ["大學"], i: 3)
+        School(city: "台北市", name: ["大學","大學"], i: 1),
+        School(city: "台南市", name: ["大學"], i: 2),
+        School(city: "台中市", name: ["大學"], i: 3),
+        School(city: "高雄市", name: ["大學"], i: 4)
     ]
 }
 
-struct nearby: Hashable {
+struct Nearby: Hashable {
     var distance: String
+    var i: Int
     
-    init(distance: String) {
+    init(distance: String, i: Int) {
         self.distance = distance
+        self.i = i
     }
     
-    static let distances: [nearby] =
+    static let distances: [Nearby] =
     [
-    nearby(distance: "500公里內")
+    Nearby(distance: "500公里內", i: 1)
     ]
 }
 
 class Index: ObservableObject {
-    var index1:  Int
-    var index2: Int
+    @Published var index: Int
+    @Published var index1:  Int
+    @Published var index2: Int
+    @Published var index3: Int
     
-    init(index1: Int, index2: Int) {
+    init(index: Int, index1: Int, index2: Int, index3: Int) {
+        self.index = index
         self.index1 = index1
         self.index2 = index2
+        self.index3 = index3
     }
 }
 

@@ -52,8 +52,8 @@ struct FindJobHorizontalScrollerView: View {
     }
 }
 
-//struct FindJobHorizontalScrollerView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        FindJobHorizontalScrollerView(searchTags: .constant([""]))
-//    }
-//}
+struct FindJobHorizontalScrollerView_Previews: PreviewProvider {
+    static var previews: some View {
+        FindJobHorizontalScrollerView(searchTags: .constant([""]))
+    }
+}

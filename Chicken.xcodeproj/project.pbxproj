@@ -15,9 +15,9 @@
 		0B000BD12B07A7E800FC8F5E /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000BD02B07A7E800FC8F5E /* FilterView.swift */; };
 		0B000BD32B07A86C00FC8F5E /* FilterBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000BD22B07A86C00FC8F5E /* FilterBarView.swift */; };
 		0B000BD52B07AAC200FC8F5E /* FilterBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B000BD42B07AAC200FC8F5E /* FilterBarButton.swift */; };
-		0B0231C62B07AF2F00B64BBE /* AreaLeftScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0231C52B07AF2F00B64BBE /* AreaLeftScrollView.swift */; };
-		0B0231C82B07AF3F00B64BBE /* AreaMidScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0231C72B07AF3F00B64BBE /* AreaMidScrollView.swift */; };
-		0B0231CA2B07AF5100B64BBE /* AreaRightScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0231C92B07AF5100B64BBE /* AreaRightScrollView.swift */; };
+		0B0231C62B07AF2F00B64BBE /* LeftScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0231C52B07AF2F00B64BBE /* LeftScrollView.swift */; };
+		0B0231C82B07AF3F00B64BBE /* MidScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0231C72B07AF3F00B64BBE /* MidScrollView.swift */; };
+		0B0231CA2B07AF5100B64BBE /* RightScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0231C92B07AF5100B64BBE /* RightScrollView.swift */; };
 		0B0231CC2B08CD2F00B64BBE /* LeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0231CB2B08CD2F00B64BBE /* LeftView.swift */; };
 		0B0231CE2B08CD3E00B64BBE /* MidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0231CD2B08CD3E00B64BBE /* MidView.swift */; };
 		0B0231D02B08CD4C00B64BBE /* RightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0231CF2B08CD4C00B64BBE /* RightView.swift */; };
@@ -65,9 +65,9 @@
 		0B000BD02B07A7E800FC8F5E /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		0B000BD22B07A86C00FC8F5E /* FilterBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterBarView.swift; sourceTree = "<group>"; };
 		0B000BD42B07AAC200FC8F5E /* FilterBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterBarButton.swift; sourceTree = "<group>"; };
-		0B0231C52B07AF2F00B64BBE /* AreaLeftScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaLeftScrollView.swift; sourceTree = "<group>"; };
-		0B0231C72B07AF3F00B64BBE /* AreaMidScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaMidScrollView.swift; sourceTree = "<group>"; };
-		0B0231C92B07AF5100B64BBE /* AreaRightScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaRightScrollView.swift; sourceTree = "<group>"; };
+		0B0231C52B07AF2F00B64BBE /* LeftScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftScrollView.swift; sourceTree = "<group>"; };
+		0B0231C72B07AF3F00B64BBE /* MidScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidScrollView.swift; sourceTree = "<group>"; };
+		0B0231C92B07AF5100B64BBE /* RightScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightScrollView.swift; sourceTree = "<group>"; };
 		0B0231CB2B08CD2F00B64BBE /* LeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftView.swift; sourceTree = "<group>"; };
 		0B0231CD2B08CD3E00B64BBE /* MidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidView.swift; sourceTree = "<group>"; };
 		0B0231CF2B08CD4C00B64BBE /* RightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightView.swift; sourceTree = "<group>"; };
@@ -123,9 +123,9 @@
 			children = (
 				0B000BC92B0525D200FC8F5E /* AreaPickerView.swift */,
 				0B000BCC2B07A7B800FC8F5E /* AreaView.swift */,
-				0B0231C52B07AF2F00B64BBE /* AreaLeftScrollView.swift */,
-				0B0231C72B07AF3F00B64BBE /* AreaMidScrollView.swift */,
-				0B0231C92B07AF5100B64BBE /* AreaRightScrollView.swift */,
+				0B0231C52B07AF2F00B64BBE /* LeftScrollView.swift */,
+				0B0231C72B07AF3F00B64BBE /* MidScrollView.swift */,
+				0B0231C92B07AF5100B64BBE /* RightScrollView.swift */,
 				0B000BCE2B07A7C800FC8F5E /* TimeView.swift */,
 				0B000BD02B07A7E800FC8F5E /* FilterView.swift */,
 				0B000BD22B07A86C00FC8F5E /* FilterBarView.swift */,
@@ -315,7 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BFC02662AF8D65C00A82DF4 /* FindJobPickerView.swift in Sources */,
-				0B0231CA2B07AF5100B64BBE /* AreaRightScrollView.swift in Sources */,
+				0B0231CA2B07AF5100B64BBE /* RightScrollView.swift in Sources */,
 				0B9D2D142AFFA49800261ADE /* NewsHorizontalScrollerView.swift in Sources */,
 				0BFC026A2AFA81AF00A82DF4 /* MissionCellView.swift in Sources */,
 				0B000BC82B05225F00FC8F5E /* TutorView.swift in Sources */,
@@ -323,7 +323,7 @@
 				0B000BD12B07A7E800FC8F5E /* FilterView.swift in Sources */,
 				0B9D2D1D2B00FA0700261ADE /* FindMissionToolbarView.swift in Sources */,
 				0BD7574D2AEFEB90002F70A6 /* FindJob.swift in Sources */,
-				0B0231C82B07AF3F00B64BBE /* AreaMidScrollView.swift in Sources */,
+				0B0231C82B07AF3F00B64BBE /* MidScrollView.swift in Sources */,
 				0B9D2D192B00EDA000261ADE /* ArchievedView.swift in Sources */,
 				0BD7575F2AF00A17002F70A6 /* Account.swift in Sources */,
 				0B0231CC2B08CD2F00B64BBE /* LeftView.swift in Sources */,
@@ -350,7 +350,7 @@
 				0B9D2D1B2B00F57200261ADE /* AccountListView.swift in Sources */,
 				0BFC026D2AFA81F000A82DF4 /* MessageCellView.swift in Sources */,
 				0BA2D5312B0503BC001C7F91 /* TabBarButton.swift in Sources */,
-				0B0231C62B07AF2F00B64BBE /* AreaLeftScrollView.swift in Sources */,
+				0B0231C62B07AF2F00B64BBE /* LeftScrollView.swift in Sources */,
 				0B000BC62B0520FD00FC8F5E /* OnTimeView.swift in Sources */,
 				0B9D2D162AFFCD2200261ADE /* SearchButtonView.swift in Sources */,
 				0BD7575D2AF009FD002F70A6 /* Message.swift in Sources */,

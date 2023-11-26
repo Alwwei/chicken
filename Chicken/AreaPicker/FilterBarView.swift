@@ -5,7 +5,7 @@ struct FilterBarView: View {
     
     var body: some View {
         HStack(spacing: 20) {
-            FilterBarButton(text: "地區", isSelected: .constant(tabIndex.index1 == 1))
+            FilterBarButton(text: "地區", isSelected: .constant(tabIndex.index1 == 0))
                 .onTapGesture { onTapped(index: 0) }
             FilterBarButton(text: "時段", isSelected: .constant(tabIndex.index1 == 1))
                 .onTapGesture { onTapped(index: 1) }
@@ -22,5 +22,6 @@ struct FilterBarView: View {
 struct FilterBarView_Previews: PreviewProvider {
     static var previews: some View {
         FilterBarView()
+            .environmentObject(Index(index: 0, index1: 0, index2: 0, index3: 0))
     }
 }
